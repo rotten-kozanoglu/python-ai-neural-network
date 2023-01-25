@@ -50,6 +50,6 @@ predictions = nn.feedforward()
 predictions = predictions > 0.5
 
 accuracy = accuracy_score(y_test, predictions)
-print("Kesinlik:", accuracy)
+print("Kesinlik:", accuracy) 
 
 
