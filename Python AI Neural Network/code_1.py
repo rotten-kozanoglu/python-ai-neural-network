@@ -33,7 +33,7 @@ class NeuralNetwork:
         # d_weights1 issue. -- 
         d_weights2 = np.dot(self.layer1.T, (2*(self.y - self.output) * sigmoid_derivative(self.output)))
         d_weights1 = np.dot(self.input.T, (2*(self.y - self.output) * sigmoid_derivative(self.output))).dot(self.weights2.T).dot(sigmoid_derivative(self.layer1))
-
+        # -- 
 
         self.weights1 += d_weights1
         self.weights2 += d_weights2
