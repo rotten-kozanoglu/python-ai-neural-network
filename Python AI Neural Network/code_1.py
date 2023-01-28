@@ -9,7 +9,7 @@ def sigmoid(x):
 def sigmoid_derivative(x):
     return x * (1 - x)
 
-# veri kümesi oluştur
+# veri kümesi oluştur.
 X, y = make_classification(n_samples=1000, n_features=10, n_classes=2)
 
 # veri setini dizi ve test setlerine bölme
