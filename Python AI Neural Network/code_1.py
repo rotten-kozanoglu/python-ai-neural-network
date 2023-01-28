@@ -30,6 +30,7 @@ class NeuralNetwork:
 
     def backprop(self):
         # ağırlıklara göre kayıp fonksiyonunun türevini bulmak için zincir kuralının uygulanması..
+        # d_weights1 issue. -- 
         d_weights2 = np.dot(self.layer1.T, (2*(self.y - self.output) * sigmoid_derivative(self.output)))
         d_weights1 = np.dot(self.input.T, (2*(self.y - self.output) * sigmoid_derivative(self.output))).dot(self.weights2.T).dot(sigmoid_derivative(self.layer1))
 
